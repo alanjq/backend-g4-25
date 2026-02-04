@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sesión 1</title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body onload="cargarLibros()">
+
+    <h1>Listado de libros</h1>
+    
+    <div id="contenido"></div>
+
+    <a href="lista.php">Ir a lista.php</a>
+
+    <script>
+        // evento de HTML
+        function saludar() {
+            alert("Hola")
+        }
+
+        // Un elemento de lista
+        function nuevoLibro(id, nombreLibro, paginas) {
+            return `
+            <p class="libro" id="libro-${id}">
+                <b ondblclick="cambiarNombre(${id})">${nombreLibro}</b> <br />
+                ${paginas} páginas 
+            </p>`;
+        }
+        
+        function cambiarNombre(id) {
+            const nuevoNombre = prompt("Ingrese el nuevo nombre del libro:");
+            if (nuevoNombre) {
+                event.target.innerText = nuevoNombre;
+                // Llamar a la API el cambio de nombre
+                console.log(`El libro con ID ${id} cambió su nombre a: ${nuevoNombre}`);
+            }
+        }
+
+        // consultar de la API
+        function cargarLibros() {
+            fetch('http://localhost/backend/libros.json')
+                .then(response => response.json())
+                .then(resultado => {
+                    const todosLosLibros = resultado.libros;
+                    let htmlLibros = '';
+                    todosLosLibros.map(libro => {
+                        htmlLibros += nuevoLibro(libro.id, libro.nombre, libro.paginas);
+                    });
+                    document.getElementById('contenido').innerHTML = htmlLibros;
+                })
+        }
+    </script>
+</body>
+
+</html>

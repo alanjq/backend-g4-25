@@ -1,0 +1,29 @@
+{
+    "libros": [
+        {
+            "id": 1,
+            "nombre": "Enciclopedia Tomo 1",
+            "paginas": 100
+        },
+        {
+            "id": 2,
+            "nombre": "Diccionario español-inglés",
+            "paginas": 150
+        },
+        {
+            "id": 3,
+            "nombre": "Cuentos infantiles",
+            "paginas": 200
+        },
+        {
+            "id": 4,
+            "nombre": "Novelas clásicas",
+            "paginas": 250
+        },
+        {
+            "id": 5,
+            "nombre": "Guía de programación",
+            "paginas": 300
+        }
+    ]
+}

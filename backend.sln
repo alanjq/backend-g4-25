@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api-c#", "api-c#", "{9CB1DA82-EA1B-A3BB-C307-B62672D5B7EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{6D2851D7-8C09-2A6F-51D5-B861F8E2E291}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoDockerAPI", "api-c#\app\ProyectoDockerAPI.csproj", "{53B9D2C3-6A23-51C7-661B-112D87CAEE4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53B9D2C3-6A23-51C7-661B-112D87CAEE4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B9D2C3-6A23-51C7-661B-112D87CAEE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B9D2C3-6A23-51C7-661B-112D87CAEE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B9D2C3-6A23-51C7-661B-112D87CAEE4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D2851D7-8C09-2A6F-51D5-B861F8E2E291} = {9CB1DA82-EA1B-A3BB-C307-B62672D5B7EF}
+		{53B9D2C3-6A23-51C7-661B-112D87CAEE4B} = {6D2851D7-8C09-2A6F-51D5-B861F8E2E291}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {475FA281-7AB9-4222-A3FE-04EF4829E6CC}
+	EndGlobalSection
+EndGlobal

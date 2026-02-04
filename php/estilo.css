@@ -1,0 +1,26 @@
+/* Selector por etiqueta */
+h1 {
+    color: red;
+}
+
+/* Selector por ID */
+#contenedor{
+    
+}
+
+/* Selector por atributo */
+[ondblclick] {
+    
+}
+
+/* Selector por atributo con valor específico */
+[ondblclick='algo']{
+    
+}
+
+/* Selector por clase */
+.libro {
+    border: 2px solid gray;
+    padding: 1em;
+    background-color: lightgray;
+}
